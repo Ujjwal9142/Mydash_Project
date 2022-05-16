@@ -1,0 +1,124 @@
+.rightside {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  background-color: white;
+  margin: 20px 25px 20px 0px;
+  height: 100vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rightside__heading {
+  margin-top: 80px;
+  margin-left: 80px;
+  opacity: 0.9;
+  font-size: 28px;
+}
+
+.rightside__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 80px;
+}
+
+.rightside__label {
+  margin: 10px 0px;
+  color: gray;
+  font-size: 20px;
+}
+
+.rightside__details {
+  width: 450px;
+  outline: gray;
+  border-radius: 3px;
+  height: 40px;
+  font-size: 23px;
+  outline-width: 0;
+  border: 1px solid gray;
+  margin: 0px 20px 0px 0px;
+  padding-left: 10px;
+}
+
+.rightside__phone {
+  width: 250px;
+  outline: gray;
+  border: 1px solid gray;
+  font-size: 23px;
+  border-radius: 3px;
+  margin: 0px 20px 0px 0px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.rightside__container {
+  margin: 30px 20px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.rightside__container input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.rightside__container label {
+  font-size: 21px;
+  opacity: 0.9;
+  color: black;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.rightside__button {
+  max-width: 290px;
+  min-width: 290px;
+  height: 40px;
+  background-color: #33adff;
+  color: white;
+  cursor: pointer;
+  margin: 50px 20px 10px 0px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-left: 80px;
+}
+
+.rightside__email--error, .rightside__password--error, .rightside__phone--error {
+  display: block;
+  color: red;
+}
+
+.rightside__email--noerror, .rightside__password--noerror, .rightside__phone--noerror {
+  display: none;
+}
+/*# sourceMappingURL=rightside.css.map */

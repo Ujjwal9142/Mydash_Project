@@ -1,0 +1,103 @@
+.rightside {
+  flex: 0.5;
+  background-color: white;
+  margin: 20px 25px 20px 0px;
+  height: 100vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__heading {
+    margin-top: 80px;
+    margin-left: 80px;
+    opacity: 0.9;
+    font-size: 28px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+
+  &__label {
+    margin: 10px 0px;
+    color: gray;
+    font-size: 20px;
+  }
+
+  &__details {
+    width: 450px;
+    outline: gray;
+    border-radius: 3px;
+    height: 40px;
+    font-size: 23px;
+    outline-width: 0;
+    border: 1px solid gray;
+    margin: 0px 20px 0px 0px;
+    padding-left: 10px;
+  }
+
+  &__phone {
+    width: 250px;
+    outline: gray;
+    border: 1px solid gray;
+    font-size: 23px;
+    border-radius: 3px;
+    margin: 0px 20px 0px 0px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  &__container {
+    margin: 30px 20px 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    input[type="checkbox"] {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    label {
+      font-size: 21px;
+      opacity: 0.9;
+      color: black;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+
+  &__button {
+    max-width: 290px;
+    min-width: 290px;
+    height: 40px;
+    background-color: #33adff;
+    color: white;
+    cursor: pointer;
+    margin: 50px 20px 10px 0px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 80px;
+  }
+
+  &__email--error,
+  &__password--error,
+  &__phone--error {
+    display: block;
+    color: red;
+  }
+
+  &__email--noerror,
+  &__password--noerror,
+  &__phone--noerror {
+    display: none;
+  }
+}
