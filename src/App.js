@@ -2,10 +2,11 @@ import "./styles/app.css";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";
 import { useState } from "react";
-import ChartComponent from "./ChartComponent";
+import ChartComponent from "./chart/ChartComponent";
 
 function App() {
   const [isChartOpen, setIsChartOpen] = useState(false);
+
   return (
     <div className="app">
       {isChartOpen ? (

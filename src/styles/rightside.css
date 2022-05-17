@@ -113,6 +113,10 @@
   margin-left: 80px;
 }
 
+.rightside__button:hover {
+  opacity: 0.8;
+}
+
 .rightside__email--error, .rightside__password--error, .rightside__phone--error {
   display: block;
   color: red;

@@ -1,0 +1,28 @@
+.chartcomponent {
+  flex: 1;
+  background-color: whitesmoke;
+  margin: 30px;
+  height: 100vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+
+  &__button {
+    max-width: 290px;
+    min-width: 290px;
+    height: 40px;
+    background-color: #23ad84;
+    color: white;
+    cursor: pointer;
+    margin: 30px 20px 80px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

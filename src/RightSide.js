@@ -21,10 +21,6 @@ const RightSide = ({ setIsChartOpen }) => {
     }
   }, [password, confirmation]);
 
-  useEffect(() => {
-    console.log(terms);
-  }, [terms]);
-
   const validateEmail = (e) => {
     var email = e.target.value;
 
@@ -75,6 +71,10 @@ const RightSide = ({ setIsChartOpen }) => {
       alert("Please check terms and conditions!");
       return;
     }
+    if (password.length < 6) {
+      alert("Minimum password length is 6 characters!");
+      return;
+    }
     setIsChartOpen(true);
   };
 
@@ -110,6 +110,15 @@ const RightSide = ({ setIsChartOpen }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <span
+          className={
+            password.length < 6 && password.length !== 0
+              ? "rightside__password--error"
+              : "rightside__password--noerror"
+          }
+        >
+          *Minimum 6 characters
+        </span>
         <label className="rightside__label" for="confirm">
           Confirm your password
         </label>

@@ -1,0 +1,62 @@
+import React, { useEffect, useState } from "react";
+import BarChart from "./BarChart";
+import "../styles/chartcomponent.css";
+
+const data = [
+  [10, 30, 40, 20],
+  [10, 40, 30, 20, 50, 10],
+  [60, 30, 40, 20, 30],
+  [90, 50, 30, 40, 70, 60],
+  [50, 20, 30, 20, 40, 80, 60],
+  [20, 30, 30, 10],
+  [40, 70, 20, 30, 50],
+  [20, 70, 20, 40, 40, 60],
+  [30, 10, 10, 20],
+  [70, 90, 20, 40, 30],
+  [70, 90, 20, 40, 30, 50, 10],
+  [80, 10, 30, 20, 80],
+  [30, 50, 40, 90, 100, 60],
+  [60, 50, 20, 40, 10, 50, 70, 20],
+  [40, 90, 10, 40],
+  [50, 80, 20, 40, 30],
+  [60, 50, 20, 40, 30, 50],
+  [70, 40, 20, 40, 30, 60, 20],
+  [80, 20, 20, 40, 60, 50, 30],
+  [90, 60, 20, 40, 90, 50, 40, 100],
+];
+
+const ChartComponent = () => {
+  const [chartData, setChartData] = useState([]);
+  var i = 0;
+
+  useEffect(() => {
+    changeData();
+  }, []);
+
+  const changeData = () => {
+    var j = Math.floor(Math.random() * 20);
+    if (i === j) {
+      if (i === 0) {
+        i = i + 1;
+      } else if (i === 20) {
+        i = i - 1;
+      } else {
+        i = j - 1;
+      }
+    } else {
+      i = j;
+    }
+    setChartData(data[i]);
+  };
+  return (
+    <div className="chartcomponent">
+      <h2 className="chartcomponent__heading">Simple Barchart using D3.js</h2>
+      <button onClick={changeData} className="chartcomponent__button">
+        Change Data
+      </button>
+      <BarChart width={600} height={400} data={chartData} />
+    </div>
+  );
+};
+
+export default ChartComponent;
